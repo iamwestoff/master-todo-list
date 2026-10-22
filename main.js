@@ -11,9 +11,6 @@ const IMPORTED_TASK_MARKER = / %% ToDoListSource: [^\r\n]* %%\r?$/
 const IMPORT_TASK_TAGS = ['#dashboard']
 const IMPORT_SECTION_START = '<!-- Master ToDo List imports:start -->'
 const IMPORT_SECTION_END = '<!-- Master ToDo List imports:end -->'
-const LEGACY_IMPORT_SECTION_START = '<!-- ToDoList imports:start -->'
-const LEGACY_IMPORT_SECTION_END = '<!-- ToDoList imports:end -->'
-
 
 class ToDoList extends obsidian.Plugin {
     importedTaskText(task) {
