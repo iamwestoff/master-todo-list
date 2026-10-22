@@ -1,0 +1,11 @@
+{
+	"id": "master-todo-list",
+	"name": "Master ToDo Tab",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Plugin for manage ToDos from Sasun Huevich with some customized features for a localized workflow of all ToDos across the Obsidian vault.",
+	"author": "Easton Herbon",
+	"authorUrl": "",
+	"helpUrl": "",
+	"isDesktopOnly": false
+}
