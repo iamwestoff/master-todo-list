@@ -252,11 +252,11 @@ class ToDoList extends obsidian.Plugin {
         try {
             await this.app.vault.modify(file, newContent);
         } catch (error) {
-            console.log(`ToDoList: ошибка "${error}" при перезаписи файла "${file.name}".`);
+            console.log(`ToDoList: error "${error}" while overwriting file "${file.name}".`);
             return;
         }
         
-        console.log(`ToDoList: файл "${file.name}" обновлён.`);
+        console.log(`ToDoList: file "${file.name}" updated.`);
     }
 
     async onload() {
