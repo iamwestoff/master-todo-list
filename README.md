@@ -1,4 +1,4 @@
-# Master-ToDo-List
+# Master ToDo List
 
 This is a small open source obsidian plugin used to centralize tasks/TODO's and prioritize based on user preference across an Obsidian workspace.
 
