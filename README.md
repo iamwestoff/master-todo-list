@@ -5,29 +5,33 @@ This is a small open source obsidian plugin used to centralize tasks/TODO's and 
 ## Description
 This plugin was inspired by a similar plugin that acts as a ToDo list that will organize by `Open` and `Closed` that are automatically generated once the file has been selected as the main file. The user is able to store checkboxes across their workspace, and the plugin will automatically organize them into the correct category. Checkboxes will also sort based on priority using built in emoji's used to indicate the severity of priority.
 
-## How to use
-In order to have the plugin track your checkboxes you must set a tag to the file you want to track your TODO checkboxes using an HTML tag.
-``` html
-<!-- %% Master ToDo List %% -->
-```
-To delimit what tasks you want organized into your master todo list, you must use the `dashboard` tag at the end of each task to be able to have the plugin pick up and organize it accordingly.
-
-Local checkboxes will be automatically stored without using the `dashboard` tag.
-
-## Getting Started
-
-### Dependencies
-
-There are no dependencies for this plugin.
-
 ### Installing
-#### Locally
-*  Download via this repository.
-*  Unpack to the C:/ObsidianDownloadLocation/.../plugins/master-todo-list
-*  Enjoy!
+## Installation
 
-#### Via Obsidian
-* Can be found under community plugins via `Master ToDo List`
+### From Obsidian Community Plugins (once approved)
+1. Open **Settings** → **Community plugins**.
+2. Click **Browse** and search for **ToDoList**.
+3. Install and enable the plugin.
+
+### Manual installation (before approval or for development)
+1. Download the latest release from the [GitHub releases page](https://github.com/SasunHuevich/todolist-sorter/releases).
+2. Extract the files into `<your vault>/.obsidian/plugins/todolist-sorter/`.
+3. Reload Obsidian and enable the plugin in **Settings** → **Community plugins**.
+
+## Usage
+1. Add the HTML comment  `<!-- %% Master ToDo List %% -->` anywhere in any `.md` file (e.g., at the top or bottom).
+2. Write your tasks to complete in any of these formats:
+   - `- [ ] Task not done`
+   - `* [ ] Another open task`
+   - `- [x] Completed task`
+   - `- [X] Completed task (capital X)`
+   - `* [x] Completed with asterisk`
+   - `* [X] Completed with asterisk and capital X`
+3. Save the file. The plugin will automatically:
+   - Move all open tasks under the heading `### Open`.
+   - Move all completed tasks under the heading `### Completed`.
+   - Keep all other text (non-task lines) at the top of the file.
+   - Pull in all other tasks with the `#dashboard' tag.
 
 ## Authors
 
@@ -35,8 +39,12 @@ Contributors names and contact info
 * Easton Herbon [@IamWestOff](https://twitter.com/iamwestoff)
 
 ## Version History
-* 1.0
-    * Initial Release
+* 1.0.0
+   * Initial Release!
+* 1.0.1
+   * Bug fixes and publication changes.
+* 1.0.2
+   * Bug fixes addressing legacy issues causing crashes.
 
 ## Acknowledgments
 * [todo-list](https://github.com/sasunhuevich/ToDoList)
