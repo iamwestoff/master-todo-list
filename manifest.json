@@ -3,7 +3,7 @@
 	"name": "Master ToDo Tab",
 	"version": "1.0.0",
 	"minAppVersion": "1.0.0",
-	"description": "Plugin for manage ToDos from Sasun Huevich with some customized features for a localized workflow of all ToDos across the user vault.",
+	"description": "Plugin for manage checkboxes/tasks with some customized features for a localized workflow of all checkboxes/tasks across the user vault.",
 	"author": "Easton Herbon",
 	"authorUrl": "https://github.com/iamwestoff/",
 	"helpUrl": "https://github.com/iamwestoff/master-todo-list/issues",
