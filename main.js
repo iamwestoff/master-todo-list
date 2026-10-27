@@ -128,14 +128,14 @@ class ToDoList extends obsidian.Plugin {
         
         outerLoop: for (const line of lines) {
             const trimmed = line.trim();
-            if (trimmed === IMPORT_SECTION_START || trimmed === LEGACY_IMPORT_SECTION_START) {
+            if (trimmed === IMPORT_SECTION_START) {
                 if (insideImports) {
                     throw new Error('ToDoList: Nested import sections; note left unchanged.');
                 }
                 insideImports = true;
                 continue;
             }
-            if (trimmed === IMPORT_SECTION_END || trimmed === LEGACY_IMPORT_SECTION_END) {
+            if (trimmed === IMPORT_SECTION_END) {
                 if (!insideImports) {
                     throw new Error('ToDoList: Unmatched import section end; note left unchanged.');
                 }
