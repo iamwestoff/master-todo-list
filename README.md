@@ -14,8 +14,8 @@ This plugin was inspired by a similar plugin that acts as a ToDo list that will 
 3. Install and enable the plugin.
 
 ### Manual installation (before approval or for development)
-1. Download the latest release from the [GitHub releases page](https://github.com/SasunHuevich/todolist-sorter/releases).
-2. Extract the files into `<your vault>/.obsidian/plugins/todolist-sorter/`.
+1. Download the latest release from the [GitHub releases page](https://github.com/iamwestoff/master-todo-list/releases/).
+2. Extract the files into `<your vault>/.obsidian/plugins/master-todo-list/`.
 3. Reload Obsidian and enable the plugin in **Settings** → **Community plugins**.
 
 ## Usage
@@ -34,8 +34,6 @@ This plugin was inspired by a similar plugin that acts as a ToDo list that will 
    - Pull in all other tasks with the `#dashboard' tag.
 
 ## Authors
-
-Contributors names and contact info
 * Easton Herbon [@IamWestOff](https://twitter.com/iamwestoff)
 
 ## Version History
@@ -44,7 +42,10 @@ Contributors names and contact info
 * 1.0.1
    * Bug fixes and publication changes.
 * 1.0.2
-   * Bug fixes addressing legacy issues causing crashes.
+   * Bug fixes
+        * Addressing legacy issues causing crashes.
+        * Fixed issue where there was tasks not being marked off in both files.
+   * Added ability to right-click to "Go to Original Task", and pull up file where task is located.
 
 ## Acknowledgments
 * [todo-list](https://github.com/sasunhuevich/ToDoList)
