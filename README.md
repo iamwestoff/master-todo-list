@@ -3,7 +3,7 @@
 An open-source Obsidian plugin that gathers selected tasks across your vault into a master list, organized by status, project, and priority.
 
 ## Description
-Mark a note as a dashboard to automatically organize its tasks under **Open** and **Completed**. Import tasks from other notes using a configurable tag, group them by project, and check them off from the dashboard without losing their original location. This plugin was inspired by [todo-list](https://github.com/sasunhuevich/ToDoList).
+Mark a note as a `#task` to automatically organize its tasks under **Open** and **Completed**. Import tasks from other notes using a configurable tag, group them by project, and check them off from the dashboard without losing their original location. This plugin was inspired by [todo-list](https://github.com/sasunhuevich/ToDoList).
 
 ## Installation
 
@@ -82,7 +82,7 @@ Within each project, tasks are sorted in this order: 🔺, ⏫, 🔼, 🔽, ⏬,
 
 ### Complete or reopen imported tasks
 
-Checking or unchecking an imported task updates the original checkbox in its source note. The original task stays in place, and the dashboard copy moves to the appropriate status section. Source-note changes also refresh the dashboard.
+Checking or unchecking an imported task updates the original checkbox in its source note. The original task stays in place, and the tagged copy moves to the appropriate status section. Source-note changes also refresh the dashboard.
 
 Synchronization handles `✅ YYYY-MM-DD` completion dates and reordered priority/tag metadata, including changes made by other plugins. Completing a task carries its completion date back to the source; reopening removes that date. Source formatting and block IDs are preserved during checkbox updates.
 
@@ -102,9 +102,10 @@ The menu option applies to tracked imports, not dashboard-local tasks. If the or
 * 1.0.3
    * Bug fixes 
       * Sub tasks not staying with parent tasks when created in dashboard now fixed.
-   * Functionality
-      * Added ability to change tag to user specified value.
+   * Changes/Updates
+      * Added ability to change tag to user specified value via settings.
       * User can now create tasks/subtasks under assigned categories, and they will populate to their source file.
+      * Adjusted default tag to #tasks
 
 ### Previous releases
 * 1.0.0
